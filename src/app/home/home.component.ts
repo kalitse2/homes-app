@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
 import { HousingLocation } from '../housingLocation';
@@ -12,7 +12,6 @@ import { HousingService } from '../housing.service';
   template: `
     <section>
       <form>
-        <input type="text" placeholder="Filter by city">
         <button class="primary" type="button">Search</button>
       </form>
     </section>
